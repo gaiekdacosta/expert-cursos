@@ -123,11 +123,12 @@ header {
 }
 .heading span {
   font-size: 1rem;
-  font-weight: 600;
+  font-weight: 700;
   color: var(--second-color);
 }
 .heading h1 {
   font-size: 2rem;
+  font-weight: 700;
   color: var(--main-color);
 }
 .cursos-container {
@@ -228,39 +229,59 @@ header {
   margin: 0.5rem 0 1rem;
   text-align: justify;
 }
-/* .contact {
+
+.depoimentos {
+  display: flex;
+  margin-top: 25px;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.image-card-depoimento {
+  border-radius: 100%;
+  height: 60px;
+  width: 60px;
+}
+
+.card-depoimento {
   display: flex;
   flex-direction: column;
-  align-items: center;
-}
-.social a {
-  font-size: 27px;
-  margin: 0.5rem;
-}
-.social a .bx {
-  padding: 5px;
-  color: #fff;
-  background: #000000;
-  border-radius: 50%;
-}
-.social a .bx:hover {
-  background: var(--main-color);
-}
-.links {
-  margin: 1rem 0 1rem;
-}
-.links a {
-  font-size: 1rem;
-  font-weight: 500;
-  color: var(--second-color);
-  padding: 1rem;
-}
-.links a:hover {
-  color: var(--main-color);
-}
-.contact p {
+  padding: 1%;
   text-align: center;
-} */
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(233, 233, 233);
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  border-radius: 5px;
+  width: 270px;
+  height:130px;
+  cursor: pointer;
+}
+
+.nome-depoimento {
+  font-weight: 600;
+  font-size: 17.5px;
+}
+
+.texto-depoimento {
+  font-weight: 500;
+  padding: 1%;
+  font-style: italic;
+  font-size: 14.5px;
+  color: rgb(75, 75, 75);
+  margin-bottom: 35px;
+}
+
+.card-depoimento:hover {
+  background-color: var(--main-color);
+  transition: 1.0s ease, transform 1.0s ease;
+}
+
+.card-depoimento:hover .nome-depoimento,
+.card-depoimento:hover .texto-depoimento {
+  color: white;
+}
+
 footer {
   margin: 0;
   padding: 0;
@@ -505,4 +526,3 @@ footer {
   font-size: 18px; 
   transition: background-color 0.3s, box-shadow 0.3s;
 }
-

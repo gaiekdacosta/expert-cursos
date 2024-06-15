@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Expert Cursos</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="css/style.css" />
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
@@ -13,11 +14,26 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="shortcut icon" href="assets/x001-removebg-preview.png" type="image/x-icon" />
     <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'main': '#FF8C1A',
+                        'hover': '#FFAC59',
+                        'second': '#820AD1',
+                        'third': '#0000FF',
+                        'white': '#FFF',
+                        'alternative': '#EBDBC8',
+                    }
+                }
+            }
+        }
+    </script>
     <script src="js/efeito.js" defer></script>
 </head>
 
 <body>
-    <!-- Barra De Navegação -->
     <header>
         <a href="#" class="logo"><img src="assets/x001-removebg-preview.png" alt="Logo" /></a>
         <div class="bx bx-menu" id="menu-icon"></div>
@@ -230,6 +246,51 @@
                 qui praesentium deserunt quae velit.
             </p>
             <a class="btn2">Saiba Mais</a>
+        </div>
+    </section>
+
+    <section>
+        <div class="heading">
+            <span class="efeito-reveal">OPINIÃO DO ALUNOS</span>
+            <h1 class="efeito-reveal">DEPOIMENTOS</h1>
+        </div>
+        <div class="depoimentos">
+            <div class="card-depoimento">
+                <img 
+                    src="assets/perfil-default.png"
+                    class="image-card-depoimento" />
+                <p class="nome-depoimento">João da silva</p>
+                <p class="texto-depoimento">
+                    "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+                </p>
+            </div>
+            <div class="card-depoimento">
+                <img 
+                    src="assets/perfil-default.png"
+                    class="image-card-depoimento" />
+                <p class="nome-depoimento">João da silva</p>
+                <p class="texto-depoimento">
+                    "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+                </p>
+            </div>
+            <div class="card-depoimento">
+                <img 
+                    src="assets/perfil-default.png"
+                    class="image-card-depoimento" />
+                <p class="nome-depoimento">João da silva</p>
+                <p class="texto-depoimento">
+                    "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+                </p>
+            </div>
+            <div class="card-depoimento">
+                <img 
+                    src="assets/perfil-default.png"
+                    class="image-card-depoimento" />
+                <p class="nome-depoimento">João da silva</p>
+                <p class="texto-depoimento">
+                    "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+                </p>
+            </div>
         </div>
     </section>
 
