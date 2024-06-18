@@ -17,6 +17,11 @@
     --white-color: #FFF;
     --alternative-color: #EBDBC8;
 }
+
+body {
+  background-color: whitesmoke;
+}
+
 section {
   padding: 50px 10%;
 }
@@ -115,7 +120,7 @@ header {
   margin: 0.5rem 0 1.4rem;
 }
 .cursos {
-  background: var(--alternative-color);
+
 }
 .heading {
   text-align: center;
@@ -133,64 +138,72 @@ header {
 }
 .cursos-container {
   display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  margin-top: 5rem;
+  margin-top: 2rem;
 }
-.cursos-container .box {
-  flex: 1 1 10rem;
-  background: #ffc266;
-  padding: 20px;
+
+.curso-card {
   display: flex;
-  text-align: center;
   flex-direction: column;
-  align-items: center;
-  margin-top: 3rem;
-  border-radius: 0.5rem;
+  border-radius: 10px;
+  background-color: white;
+  height: 360px;
+  width: 350px; 
 }
-.cursos-container .box .box-img {
-  width: 150px;
-  height: 150px;
-  margin-top: -100px;
+
+.curso-img {
+  width: 400px;
+  height: 150px; 
+  border-top-left-radius: 0.375rem; 
+  border-top-right-radius: 0.375rem;
 }
-.cursos-container .box .box-img img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  object-position: center;
+
+.curso-conteudo {
+  padding: 10px;
 }
-.stars {
-  margin: 1rem 0 0.1rem;
+
+.curso-conteudo-titulo {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+  font-size: 18px;
+  color: #353535;
 }
-.cursos-container .box .stars .bx {
-  color: var(--white-color);
+
+.curso-descricao {
+  font-size: 15px;
+  font-weight: 300;
+  margin-top: 8px;
 }
-.cursos-container .box h2 {
-  color: var(--white-color);
-  font-size: 1.2rem;
-}
-.cursos-container .box span {
-  color: var(--white-color);
-  font-size: 1.4rem;
+
+.curso-informacoes {
+  display: flex;
+  justify-content: space-between;
   font-weight: 500;
-  margin: 0.2rem 0 0.5rem;
+  margin-top: 5px;
+  font-size: 15px;
 }
-.box .btn {
-  border: 2px solid var(--white-color);
-  color: var(--white-color);
-  background: transparent;
+
+.curso-informacoes-item {
+  display: flex;
+  align-items: center;
 }
-.box .btn:hover {
-  background: var(--third-color);
-  color: var(--white-color);
-  border: 2px solid var(--third-color);
+
+.curso-btn {
+  background-color: var(--main-color);
+  color: white;
+  font-weight: 600;
+  width: 100%;
+  height: 32px;
+  border-radius: 2px;
 }
+
 .container {
   display: flex;
   flex-wrap: wrap;
   gap: 1.5rem;
   margin-top: 2rem;
 }
+
 .eventos-img,
 .podcast-img {
   flex: 1 1 21rem;
@@ -250,7 +263,7 @@ header {
   text-align: center;
   justify-content: center;
   align-items: center;
-  background-color: rgb(233, 233, 233);
+  background-color: white;
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
   border-radius: 5px;
   width: 270px;

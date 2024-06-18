@@ -14,22 +14,6 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="shortcut icon" href="assets/x001-removebg-preview.png" type="image/x-icon" />
     <script src="https://unpkg.com/scrollreveal"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        'main': '#FF8C1A',
-                        'hover': '#FFAC59',
-                        'second': '#820AD1',
-                        'third': '#0000FF',
-                        'white': '#FFF',
-                        'alternative': '#EBDBC8',
-                    }
-                }
-            }
-        }
-    </script>
     <script src="js/efeito.js" defer></script>
 </head>
 
@@ -57,7 +41,7 @@
             <a href="#" class="btn efeito-reveal-delay">Seja Expert</a>
         </div>
         <div class="inicio-img efeito-reveal">
-            <img src="assets/home.png" alt="Logo" />
+            <img src="assets/undraw_medicine_b-1-ol.svg" alt="Logo" />
         </div>
     </section>
     <!--Secção Cursos-->
@@ -67,68 +51,42 @@
             <h1>Cursos Em Alta</h1>
         </div>
         <div class="cursos-container">
-            <div class="box efeito-reveal-card1">
-                <div class="box-img">
-                    <img src="assets/imobilização2.0.jpeg" alt="" />
+            <div class="curso-card">
+                <img 
+                    class="curso-img"
+                    src="/assets/imobilização2.0.jpeg" 
+                    alt="imagem curso"
+                />
+                <div class="curso-conteudo">
+                    <div class="curso-conteudo-titulo">
+                        <h3>IMOBILIZAÇÃO</h3>
+                        <div style="font-size: 16px;">
+                            <p><span style="color: #FF8C1A;">R$</span> 297,99/MÊS</p>
+                        </div>
+                    </div>
+                    <p class="curso-descricao">
+                        O Curso de Imobilização capacita profissionais de saúde e resgate a <br />
+                        aplicar técnicas eficazes de imobilização em vítimas de traumas.
+                    </p>
+                    <div class="curso-informacoes">
+                        <div class="curso-informacoes-item">
+                            <i class='bx bxs-book'></i>
+                            <p>12 aulas</p>
+                        </div>
+                        <div class="curso-informacoes-item">
+                            <i class='bx bxs-time' ></i>
+                            <p>1200h</p>
+                        </div>
+                        <div class="curso-informacoes-item">
+                            <i class='bx bxs-time' ></i>
+                            <p>+1000 alunos</p>
+                        </div>
+                    </div>
+                    <button
+                        class="curso-btn">
+                        inscreva-se
+                    </button>
                 </div>
-                <div class="stars">
-                    <i class="bx bxs-star"></i>
-                    <i class="bx bxs-star"></i>
-                    <i class="bx bxs-star"></i>
-                    <i class="bx bxs-star"></i>
-                    <i class="bx bxs-star"></i>
-                </div>
-                <h2>Imobilização</h2>
-                <span>R$ 187,00</span>
-                <a href="#" class="btn">Inscreva-se</a>
-            </div>
-
-            <div class="box efeito-reveal-card2">
-                <div class="box-img">
-                    <img src="assets/posicionamento2.0.jpeg" alt="" />
-                </div>
-                <div class="stars">
-                    <i class="bx bxs-star"></i>
-                    <i class="bx bxs-star"></i>
-                    <i class="bx bxs-star"></i>
-                    <i class="bx bxs-star"></i>
-                    <i class="bx bxs-star"></i>
-                </div>
-                <h2>Posicionamento</h2>
-                <span>R$ 187,00</span>
-                <a href="#" class="btn">Inscreva-se</a>
-            </div>
-
-            <div class="box efeito-reveal-card3">
-                <div class="box-img">
-                    <img src="assets/tomografia2.0.jpeg" alt="" />
-                </div>
-                <div class="stars">
-                    <i class="bx bxs-star"></i>
-                    <i class="bx bxs-star"></i>
-                    <i class="bx bxs-star"></i>
-                    <i class="bx bxs-star"></i>
-                    <i class="bx bxs-star"></i>
-                </div>
-                <h2>Tomografia</h2>
-                <span>R$ 187,00</span>
-                <a href="#" class="btn">Inscreva-se</a>
-            </div>
-
-            <div class="box efeito-reveal-card4">
-                <div class="box-img">
-                    <img src="assets/anatomia2.0.jpeg" alt="" />
-                </div>
-                <div class="stars">
-                    <i class="bx bxs-star"></i>
-                    <i class="bx bxs-star"></i>
-                    <i class="bx bxs-star"></i>
-                    <i class="bx bxs-star"></i>
-                    <i class="bx bxs-star"></i>
-                </div>
-                <h2>Anatomia</h2>
-                <span>R$ 187,00</span>
-                <a href="#" class="btn">Inscreva-se</a>
             </div>
         </div>
     </section>
@@ -248,6 +206,8 @@
             <a class="btn2">Saiba Mais</a>
         </div>
     </section>
+
+    <!--Seçção Depoimentos-->
 
     <section>
         <div class="heading">
